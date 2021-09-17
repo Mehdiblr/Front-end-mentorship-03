@@ -12,7 +12,7 @@
     <!-- add custom css file -->
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body onload="changeDateValue()">
     <header id="top-header">
         <div class="logo">
             <h3>Travel with us</h3>
@@ -27,6 +27,7 @@
                 <div class="where-you-go">
                     <label for="where">Where you go?</label><br/>
                     <select id="where">
+                        <option value="default">Select a region</option>
                         <option value="IR_Tehran">Iran, Tehran</option>
                         <option value="TR_Istanbul">Turkey, Istanbul</option>
                         <option value="GER_Berlin">Germany, Berlin </option>
@@ -35,7 +36,7 @@
                 </div>
                 <div class="check-in">
                     <label for="check">check in</label><br/>
-                    <input type="date" id="check-in" name="check-in-date" />
+                    <input type="date" id="check-in" name="check-in-date" placeholder="S" />
                 </div>
                 <div class="check-out">
                     <label for="check-out">check out</label><br/>
@@ -47,5 +48,6 @@
             </form>
         </section>
     </main>
+    <script src="assets/js/javascript.js"></script>
 </body>
 </html>
