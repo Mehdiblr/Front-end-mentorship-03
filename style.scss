@@ -98,10 +98,12 @@ main#main-page{
                     font-size: 1.6rem;
                 }
                 select{
-                    border:none
+                    border:none;
+                    font-family: inherit;
                 }
                 input{
                     border: 0;
+                    font-family: inherit;
                 }
                 input[type=submit]{
                     border: 0;

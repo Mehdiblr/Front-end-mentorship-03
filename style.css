@@ -140,10 +140,12 @@ main#main-page section form div label {
 
 main#main-page section form div select {
   border: none;
+  font-family: inherit;
 }
 
 main#main-page section form div input {
   border: 0;
+  font-family: inherit;
 }
 
 main#main-page section form div input[type=submit] {
