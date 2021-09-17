@@ -1,0 +1,155 @@
+// variables
+$lightBlue: lightblue;
+$white: #fff;
+$headerGreen: #16A085;
+$paleWhite: #ffffffab;
+$black: #000;
+$searchButton: #16A085;
+// mmixin
+
+
+
+//custom css
+@media only screen and (max-width: 850px) {
+    section form{
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        align-content: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 25px !important;
+    }
+    form div {
+        border-right: 0 !important;
+        border-bottom: 2px solid #000 !important;
+        padding: 12px 0px !important;
+    }
+    form div:last-child {
+        border: 0 !important;
+        padding: 12px 0px !important;
+    }
+
+}
+body{
+    background:$lightBlue url(assets/img/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg) no-repeat center ;
+    background-size: cover; 
+    background-origin: border-box	;
+
+}
+header#top-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    min-height: 5rem;
+    background-color: transparent;
+    padding: 0px 20px;
+    background-color: $white;
+    .logo {
+        padding: 8px;
+        h3{
+            font-size: 2rem;
+            font-weight: normal;
+            color: $headerGreen
+        }
+
+    }
+    .account-manage{
+        background-color: $paleWhite;
+        padding: 5px 12px;;
+        color: $headerGreen;
+        font-size: 2rem;
+        border-radius: 5px;
+        transition: 1s;
+    }
+}
+main#main-page{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    min-height: 78vh;
+    section{
+
+        form{
+            background-color: $white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            div{
+                padding: 0px 20px;
+                border-right: 2px solid $black;
+                label{
+                    padding: 8px 0;
+                    display: inline-block;
+                    text-align: center;
+                    width: 100%;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                }
+                select{
+                    border:none
+                }
+                input{
+                    border: 0;
+                }
+                input[type=submit]{
+                    border: 0;
+                    padding: 15px 25px;
+                    background-color: $searchButton;
+                    color: $white;
+                    font-weight: 600;
+                    font-family: inherit;
+                    font-size: 1.6rem;
+                    border-radius: 5px;
+                }
+            }
+            div:nth-last-child(2),div:last-child{
+                border: 0;
+            }
+            div:last-child{
+                border: 0;
+                
+            }
+            // div.check-in{
+            //     padding: 10px 20px;
+            //     border-right: 2px solid #eee;
+            //     label{
+            //         padding: 8px 0;
+            //         display: inline-block;
+            //         text-align: center;
+            //         width: 100%;
+            //         font-weight: 600;
+            //         font-size: 1.6rem;
+            //     }
+            //     input{
+            //         border: 0;
+            //     }
+            // }
+            // div.check-out{
+            //     padding: 10px 20px;
+            //     label{
+            //         padding: 8px 0;
+            //         display: inline-block;
+            //         text-align: center;
+            //         width: 100%;
+            //         font-weight: 600;
+            //         font-size: 1.6rem;
+            //     }
+            //     input{
+            //         border: 0;
+            //     }
+            // }
+        }
+    }
+}

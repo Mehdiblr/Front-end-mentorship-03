@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Mentorship 03</title>
+    <!-- Add FontAwesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- add reset css file -->
+    <link rel="stylesheet" href="assets/style/reset.css" />
+    <!-- add custom css file -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header id="top-header">
+        <div class="logo">
+            <h3>Travel with us</h3>
+        </div>
+        <div class="account-manage">
+            <span>Account <i class="far fa-user-circle"></i></span>
+        </div>
+    </header>
+    <main id="main-page">
+        <section>
+            <form>
+                <div class="where-you-go">
+                    <label for="where">Where you go?</label><br/>
+                    <select id="where">
+                        <option value="IR_Tehran">Iran, Tehran</option>
+                        <option value="TR_Istanbul">Turkey, Istanbul</option>
+                        <option value="GER_Berlin">Germany, Berlin </option>
+                        <option value="AUS_Sydney">Australia, Sydney</option>
+                    </select>
+                </div>
+                <div class="check-in">
+                    <label for="check">check in</label><br/>
+                    <input type="date" id="check-in" name="check-in-date" />
+                </div>
+                <div class="check-out">
+                    <label for="check-out">check out</label><br/>
+                    <input type="date" id="check-out" name="check-out-date" />
+                </div>
+                <div class="search-button">
+                    <input type="submit" id="search-button" value="Search" name="search-button" />
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

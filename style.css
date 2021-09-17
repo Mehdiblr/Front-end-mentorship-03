@@ -1,0 +1,167 @@
+@media only screen and (max-width: 850px) {
+  section form {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+    -ms-flex-line-pack: center !important;
+        align-content: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    padding: 25px !important;
+  }
+  form div {
+    border-right: 0 !important;
+    border-bottom: 2px solid #000 !important;
+    padding: 12px 0px !important;
+  }
+  form div:last-child {
+    border: 0 !important;
+    padding: 12px 0px !important;
+  }
+}
+
+body {
+  background: lightblue url(assets/img/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+header#top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 5rem;
+  background-color: transparent;
+  padding: 0px 20px;
+  background-color: #fff;
+}
+
+header#top-header .logo {
+  padding: 8px;
+}
+
+header#top-header .logo h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #16A085;
+}
+
+header#top-header .account-manage {
+  background-color: #ffffffab;
+  padding: 5px 12px;
+  color: #16A085;
+  font-size: 2rem;
+  border-radius: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main#main-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 78vh;
+}
+
+main#main-page section form {
+  background-color: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+}
+
+main#main-page section form div {
+  padding: 0px 20px;
+  border-right: 2px solid #000;
+}
+
+main#main-page section form div label {
+  padding: 8px 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+main#main-page section form div select {
+  border: none;
+}
+
+main#main-page section form div input {
+  border: 0;
+}
+
+main#main-page section form div input[type=submit] {
+  border: 0;
+  padding: 15px 25px;
+  background-color: #16A085;
+  color: #fff;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+
+main#main-page section form div:nth-last-child(2), main#main-page section form div:last-child {
+  border: 0;
+}
+
+main#main-page section form div:last-child {
+  border: 0;
+}
+/*# sourceMappingURL=style.css.map */
