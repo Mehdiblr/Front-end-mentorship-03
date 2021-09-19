@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrontEnd Mentorship 03</title>
     <!-- Add FontAwesome Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- add reset css file -->
     <link rel="stylesheet" href="assets/style/reset.css" />
+    <!-- add flatpicker css file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <!-- add custom css file -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
-<body >
+
+<body>
+    <!-- start header -->
     <header id="top-header">
         <div class="logo">
             <h3>Travel with us</h3>
@@ -22,11 +28,14 @@
             <span>Account <i class="far fa-user-circle"></i></span>
         </div>
     </header>
+    <!-- End header -->
+    <!-- start main section -->
     <main id="main-page">
         <section>
             <form>
+                <!-- where select option  -->
                 <div class="where-you-go">
-                    <label for="where">Where you go?</label><br/>
+                    <label for="where">Where you go?</label><br />
                     <select id="where">
                         <option value="default">Select a region</option>
                         <option value="IR_Tehran">Iran, Tehran</option>
@@ -35,28 +44,38 @@
                         <option value="AUS_Sydney">Australia, Sydney</option>
                     </select>
                 </div>
+                <!-- /where select option  -->
+                <!-- check in section -->
                 <div class="check-in">
-                    <label for="check">check in <i class="fas fa-plane-arrival"></i></label><br/>
-                    <input type="date" id="check-in" name="check-in-date" placeholder="Add a date"/>
+                    <label for="check">check in <i class="fas fa-plane-arrival"></i></label><br />
+                    <input type="date" id="check-in" name="check-in-date" placeholder="Add a date" />
 
                 </div>
+                <!-- /check in section -->
+                <!-- check out section -->
                 <div class="check-out">
-                    <label for="check-out">check out <i class="fas fa-plane-departure"></i></label><br/>
+                    <label for="check-out">check out <i class="fas fa-plane-departure"></i></label><br />
                     <input type="date" id="check-out" name="check-out-date" placeholder="Add a date" />
                 </div>
+                <!-- /check out section -->
+                <!-- serch button -->
                 <div class="search-button">
                     <input type="submit" id="search-button" value="Search" name="search-button" />
                 </div>
+                <!-- /search button -->
             </form>
         </section>
     </main>
+    <!-- end main section -->
+    <!-- add flatpicker javascript -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
         flatpickr("input[type=date]", {
-          minDate: "today",
-          defaultDate: "today",
-          dateFormat: "F j, Y"
+            minDate: "today",
+            defaultDate: "today",
+            dateFormat: "F j, Y"
         });
-      </script>
+    </script>
 </body>
+
 </html>

@@ -5,10 +5,6 @@ $headerGreen: #16A085;
 $paleWhite: #ffffffab;
 $black: #000;
 $searchButton: #16A085;
-// mmixin
-
-
-
 //custom css
 @media only screen and (max-width: 760px) {
     section form{
@@ -31,12 +27,15 @@ $searchButton: #16A085;
     }
 
 }
+//body
 body{
     background:$lightBlue url(assets/img/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg) no-repeat center ;
     background-size: cover; 
     background-origin: border-box	;
 
 }
+
+//header
 header#top-header{
     display: flex;
     flex-direction: row;
@@ -66,6 +65,9 @@ header#top-header{
         transition: 1s;
     }
 }
+
+
+// main section
 main#main-page{
     display: flex;
     flex-wrap: nowrap;
@@ -75,7 +77,7 @@ main#main-page{
     align-content: center;
     min-height: 78vh;
     section{
-
+        // form + inputs and label style section
         form{
             background-color: $white;
             border-radius: 10px;
@@ -127,35 +129,6 @@ main#main-page{
                 border: 0;
                 
             }
-            // div.check-in{
-            //     padding: 10px 20px;
-            //     border-right: 2px solid #eee;
-            //     label{
-            //         padding: 8px 0;
-            //         display: inline-block;
-            //         text-align: center;
-            //         width: 100%;
-            //         font-weight: 600;
-            //         font-size: 1.6rem;
-            //     }
-            //     input{
-            //         border: 0;
-            //     }
-            // }
-            // div.check-out{
-            //     padding: 10px 20px;
-            //     label{
-            //         padding: 8px 0;
-            //         display: inline-block;
-            //         text-align: center;
-            //         width: 100%;
-            //         font-weight: 600;
-            //         font-size: 1.6rem;
-            //     }
-            //     input{
-            //         border: 0;
-            //     }
-            // }
         }
     }
 }
