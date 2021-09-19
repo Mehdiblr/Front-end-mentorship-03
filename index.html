@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/style/reset.css" />
     <!-- add custom css file -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body >
     <header id="top-header">
@@ -36,11 +37,12 @@
                 </div>
                 <div class="check-in">
                     <label for="check">check in <i class="fas fa-plane-arrival"></i></label><br/>
-                    <input type="date" id="check-in" name="check-in-date" />
+                    <input type="date" id="check-in" name="check-in-date" placeholder="Add a date"/>
+
                 </div>
                 <div class="check-out">
                     <label for="check-out">check out <i class="fas fa-plane-departure"></i></label><br/>
-                    <input type="date" id="check-out" name="check-out-date" />
+                    <input type="date" id="check-out" name="check-out-date" placeholder="Add a date" />
                 </div>
                 <div class="search-button">
                     <input type="submit" id="search-button" value="Search" name="search-button" />
@@ -48,5 +50,13 @@
             </form>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("input[type=date]", {
+          minDate: "today",
+          defaultDate: "today",
+          dateFormat: "F j, Y"
+        });
+      </script>
 </body>
 </html>
