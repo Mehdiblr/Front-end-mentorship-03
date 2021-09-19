@@ -3,7 +3,7 @@
 This is a mini-project of big project.
 
 This project creates by Html, Scss and css.
-
+I use a javascript library to select date that its name is flatpicker which you can visit [there](https://flatpickr.js.org/)
 -----------------
 
 It has some parts for:
