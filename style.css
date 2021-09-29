@@ -1,4 +1,8 @@
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 770px) {
+  body {
+    background: lightblue url(assets/img/SPOILER_sven-unsplash.webp) !important;
+    background-size: cover !important;
+  }
   section form {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -31,9 +35,10 @@
 }
 
 body {
-  background: lightblue url(assets/img/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg) no-repeat center;
+  background: lightblue url(assets/img/SPOILER_sven-unsplash.jpg) no-repeat center;
   background-size: cover;
   background-origin: border-box;
+  min-height: 100vh;
 }
 
 header#top-header {
@@ -98,7 +103,7 @@ main#main-page {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  min-height: 78vh;
+  min-height: 90vh;
 }
 
 main#main-page section form {
@@ -143,6 +148,7 @@ main#main-page section form div select {
   font-family: inherit;
   font-size: 1.8rem;
   text-align: center;
+  outline: none;
 }
 
 main#main-page section form div input {

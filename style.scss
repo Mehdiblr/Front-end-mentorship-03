@@ -6,7 +6,12 @@ $paleWhite: #ffffffab;
 $black: #000;
 $searchButton: #16A085;
 //custom css
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 770px) {
+    body{
+        background:$lightBlue url(assets/img/SPOILER_sven-unsplash.webp) !important;
+        background-size: cover !important;
+
+    }
     section form{
         display: flex !important;
         flex-direction: column !important;
@@ -29,9 +34,10 @@ $searchButton: #16A085;
 }
 //body
 body{
-    background:$lightBlue url(assets/img/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg) no-repeat center ;
+    background:$lightBlue url(assets/img/SPOILER_sven-unsplash.jpg) no-repeat center ;
     background-size: cover; 
     background-origin: border-box	;
+    min-height: 100vh;
 
 }
 
@@ -75,7 +81,7 @@ main#main-page{
     align-items: center;
     justify-content: center;
     align-content: center;
-    min-height: 78vh;
+    min-height: 90vh;
     section{
         // form + inputs and label style section
         form{
@@ -104,6 +110,7 @@ main#main-page{
                     font-family: inherit;
                     font-size: 1.8rem;
                     text-align: center;
+                    outline:none;
                 }
                 input{
                     border: 0;
