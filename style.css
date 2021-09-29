@@ -1,6 +1,52 @@
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 992px) {
   body {
     background: lightblue url(assets/img/SPOILER_sven-unsplash.webp) !important;
+    background-size: cover !important;
+  }
+  section {
+    width: 70% !important;
+  }
+  section form {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+    -ms-flex-line-pack: center !important;
+        align-content: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    padding: 25px !important;
+  }
+  form div {
+    border-right: 0 !important;
+    border-bottom: 2px solid #000 !important;
+    padding: 12px 0px !important;
+    width: 100% !important;
+  }
+  form div select {
+    width: 100% !important;
+  }
+  form div input {
+    width: 100% !important;
+  }
+  form div:last-child {
+    border: 0 !important;
+    padding: 12px 0px !important;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  body {
+    background: lightblue url(assets/img/SPOILER_sven-unsplash-w300.jpg) !important;
     background-size: cover !important;
   }
   section form {
